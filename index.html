@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>THmoney — Projects</title>
-<meta name="google-adsense-account" content="ca-pub-8316025253057084">
+<title>THmoney — Independent Developer</title>
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8316025525057084" crossorigin="anonymous"></script>
+<meta name="google-adsense-account" content="ca-pub-8316025525057084">
 
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -14,38 +14,66 @@
     background: linear-gradient(180deg, #1a1a2e 0%, #16213e 100%);
     color: #ddd;
     font-family: 'Segoe UI', Arial, sans-serif;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 20px;
+    line-height: 1.7;
+    padding: 30px 20px 60px;
+    max-width: 680px;
+    margin: 0 auto;
   }
-  h1 { color: #ffd166; font-size: 26px; margin-bottom: 10px; }
-  p { color: #ccc; font-size: 14px; margin-bottom: 24px; max-width: 420px; line-height: 1.6; }
-  a.game-link {
-    display: inline-block;
-    background: #ff6b6b;
-    color: #fff;
+  h1 { color: #ffd166; font-size: 28px; margin-bottom: 6px; }
+  .tagline { color: #999; font-size: 14px; margin-bottom: 30px; }
+  h2 { color: #4cc9f0; font-size: 18px; margin-top: 30px; margin-bottom: 10px; }
+  p { font-size: 14px; color: #ccc; margin-bottom: 12px; }
+  ul { padding-left: 20px; margin-bottom: 12px; }
+  li { font-size: 14px; color: #ccc; margin-bottom: 6px; }
+  a { color: #4cc9f0; }
+  .game-card {
+    display: block;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 10px;
+    padding: 18px;
+    margin: 16px 0;
     text-decoration: none;
-    font-weight: bold;
-    padding: 12px 28px;
-    border-radius: 30px;
-    box-shadow: 0 4px 12px rgba(255,107,107,0.5);
   }
-  footer { margin-top: 40px; font-size: 11px; color: #666; }
-  footer a { color: #888; }
+  .game-card h3 { color: #ff6b6b; font-size: 16px; margin-bottom: 6px; }
+  .game-card p { margin-bottom: 0; }
+  footer {
+    margin-top: 40px;
+    font-size: 12px;
+    color: #666;
+    border-top: 1px solid rgba(255,255,255,0.08);
+    padding-top: 16px;
+  }
+  footer a { color: #888; margin-right: 14px; }
 </style>
 </head>
 <body>
 
 <h1>THmoney</h1>
-<p>Independent developer building small browser games and cybersecurity tools. Check out the latest project below.</p>
+<p class="tagline">Independent developer — cybersecurity tools & small browser games</p>
 
-<a class="game-link" href="https://thmoney.github.io/Sky-Runner-/">Play Sky Runner →</a>
+<h2>About Me</h2>
+<p>I'm a self-taught cybersecurity practitioner based in South Africa, working toward SOC Analyst and broader cybersecurity roles. Alongside my security projects, I build small independent software projects to sharpen my skills and share along the way — this site is one of those projects.</p>
+
+<h2>Current Project: Sky Runner</h2>
+<a class="game-card" href="https://thmoney.github.io/Sky-Runner-/">
+  <h3>Sky Runner — Browser Endless Runner</h3>
+  <p>An endless runner built with plain HTML5 canvas and JavaScript, in the spirit of the classic offline browser dinosaur game. Jump over colorful obstacles, chase a high score, and use rewarded video ads for revives and extra lives when you're close to a personal best.</p>
+</a>
+
+<h2>How It Was Built</h2>
+<p>Sky Runner runs on a single self-contained HTML file — no build tools, no frameworks, just vanilla JavaScript drawing to an HTML5 canvas element at roughly 60 frames per second. Physics for jumping and gravity are handled with simple velocity math, obstacles spawn on a timer that gradually shortens as your score climbs, and your best score is saved locally in your browser so it persists between visits without any server or account needed.</p>
+<p>The entire project was developed and deployed from a phone, using Termux (a Linux terminal environment for Android) for git and file operations, with the game itself written and edited directly in a mobile text editor.</p>
+
+<h2>FAQ</h2>
+<p><strong>Do I need to download anything to play?</strong><br>No — it runs entirely in your browser, no install required.</p>
+<p><strong>Is my score saved?</strong><br>Your best score is saved locally in your own browser. It isn't sent anywhere or tied to an account.</p>
+<p><strong>What are the rewarded ads for?</strong><br>Watching a short video ad lets you revive after dying or bank an extra life, up to five uses per run. It's entirely optional — you can always just start a new game instead.</p>
+<p><strong>Will there be more games?</strong><br>Yes — this site will be updated as new small projects are finished. Check the <a href="devlog.html">devlog</a> for progress notes.</p>
 
 <footer>
+  <a href="devlog.html">Devlog</a>
+  <a href="https://thmoney.github.io/Sky-Runner-/privacy.html">Privacy Policy</a>
   <a href="https://github.com/THmoney" target="_blank" rel="noopener">GitHub</a>
 </footer>
 
